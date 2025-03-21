@@ -21,6 +21,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     # TODO: implement the function
+    # Adjust the solver using this article: https://stackoverflow.com/questions/38640109/logistic-regression-python-solvers-definitions/52388406#52388406
     model = LogisticRegression(solver='liblinear', max_iter=200)
     model.fit(X_train, y_train)
     return model
