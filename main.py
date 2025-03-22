@@ -42,7 +42,7 @@ app = FastAPI() # your code here
 async def get_root():
     """ Say hello!"""
     # your code here
-    return {"Result:": "Say hello!"}
+    return {"Result": "Say hello!"}
     #pass
 
 
