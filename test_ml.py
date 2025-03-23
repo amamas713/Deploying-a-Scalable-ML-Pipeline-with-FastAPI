@@ -42,4 +42,4 @@ def test_three_model_integration(data):
     model = LogisticRegression(solver="liblinear", random_state=42).fit(X, y)  # Modified to use the solver in the original model rather than the default
     predictions = model.predict(X)
     assert set(predictions) <= {0, 1}, "Predictions should be 0 or 1"
-    #pass
+   

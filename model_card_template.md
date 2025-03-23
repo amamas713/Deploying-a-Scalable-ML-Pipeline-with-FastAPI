@@ -13,12 +13,18 @@ The census dataset consisting of personal, educational, locale, income and caree
 ## Evaluation Data
 
 ## Metrics
-_Please include the metrics used and your model's performance on those metrics._
-THe model was evaluated using a F1 score of.
+Utilizing the Logistic Regression model, the model metrics were as follows:
 
+Precision: 0.7110
+Recall: 0.2576
+F1: 0.3782
 
+The model performed not ideally, contriubtors to this may have been bias in the data, convergence issues with the orignal solver whihch were resolved by implementing the "liblearner" solver and max iterations. Precision calculated 71% of the time accurately classified the income category on the demographics provided, conversely 39% were inaccurately classified. Recall on the other hand calculated at 25% of accurately classifying those predicted that were accurate, yielding a less tha favorable result. Over the F1 score was impacted substantially due to the poor performance of the Recall.
 
 ## Ethical Considerations
+From an ethical perspective, while the data doesn't provide personal protected information, inferences into the data may lead to stereotypes gained through subjective rather than evaluation through objective reasoning.
 
 ## Caveats and Recommendations
-Since this data is still gathered manually through surveys or interviews, the "human element" exists and therefore the potential for unintended bias. Aany insights gained from the model would need to take that into consideration.
+Since this data is still gathered manually through surveys or interviews, the "human element" exists and therefore the potential for unintended bias. Any insights gained from the model would need to take that into consideration.
+
+Since the Logistic Regression didn't perform as well as perhaps other models, it may be worthwhile to review other models or perhaps review and address an data bias.
